@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Health Insurance Information Form</title>
+</head>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container1">
+      <center><h2>Health Insurance Information Form</h2></center>
+      <form action="submit_phpcrm_form.php" method="POST">
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" required  name="name" placeholder="Your Name">  
+          </div>
+          <div class="col-50">
+            <input type="number" name="dob" required  placeholder="Age" required>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-50">
+                <input type="email" name="email" required placeholder="Email">
+            </div>
+            <div class="col-50">
+               <input type="number" name="phone" required placeholder="Phone">
+           </div>
+           </div>
+            <div class="row">
+              <div class="col-50">
+                <textarea name="address" id="address" placeholder="Street Address" rows="3" required></textarea>
+              </div>     
+         </div>
+         <div class="row">
+             <div class="col-50">
+                 <input type="text" name="city" required placeholder="City">
+             </div>
+             <div class="col-50">
+                <input type="text" name="state" required placeholder="State">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-50">
+                <input type="number" name="zip_code" required placeholder="Zip Code">
+            </div>
+            <div class="col-50">
+               <input type="text" name="country" required placeholder="Country">
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" name="spouse_name" required  placeholder="Spouse's Name">  
+          </div>
+          <div class="col-50">
+            <input type="number" name="spouse_dob" required  placeholder="Spouse Age">
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-50">
+          
+              <input type="text" id="name" name="children_name" placeholder="Children (under age 26) Name">  
+            </div>
+            <div class="col-50">
+              <input type="number" name="children_dob" placeholder="Children Age">
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col-50">
+                Does your employer offer health insurance?<br><br>
+                  <input type="radio" required  name="employer_insurance" value="Yes"> Yes <br><br>
+                  <input type="radio" required  name="employer_insurance" value="No"> No <br><br>
+              </div>
+              <div class="col-50">
+                Do you receive Medicare?<br><br>
+                <input type="radio" required  name="medicare" value="Yes"> Yes <br><br>
+                <input type="radio" required  name="medicare" value="No"> No <br><br>
+              </div>
+              </div>
+             
+            <div class="row">
+              <div class="col-50">
+                <textarea name="any_mess" id="any_mess" placeholder="Any Message" rows="3" required></textarea>
+              </div>     
+         </div>
+         <input type="submit" value="SEND" class="btn">
+        </form>
+       </div>
+        </div>
+        </div>
+</body>
+</html>
